@@ -154,7 +154,6 @@ body {
     margin-bottom: 30px;
 }
 .sectionSkills{
-    height: 400px;
     margin-top: 100px;
     text-align: center;
     color: white;
@@ -231,7 +230,8 @@ body {
 .form-contact input, 
 .form-contact textarea {
     background-color: #212428;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     padding: 10px;
     margin-bottom: 15px;
     border: 2px solid #aaa;
@@ -340,7 +340,7 @@ body {
     }
 
     .sectionHero img {
-        width: 500px;
+        width: 100%;
         height: auto;
     }
     .home-text {
