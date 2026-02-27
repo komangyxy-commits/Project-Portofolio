@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB PORTOFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">RIZKY</div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu-icon" id="menu-icon">
+        <i class="ph ph-list"></i>
+    </div>
+</nav>
+<section id="home" class="sectionHero">
+    <img src="./assets/fotoProfil.png" alt="Foto Profil">
+    <div class="home-text"> 
+        <h1>WEB DEVELOPER</h1>
+        <h2>I KOMANG RIZKY TRIYANA PUTRA</h2>
+        <p>
+            Saya seorang web developer pemula yang 
+            sedang belajar dan berkembang dalam membuat 
+            website yang modern dan responsif. Saat ini
+            saya fokus memperdalam HTML, CSS, dan
+            JavaScript sambil terus mengasah kemampuan saya 
+            melalui berbagai latihan dan proyek kecil.
+        </p>
+        <a href="#project" class="btn btn-project">View Projects</a>
+        <a href="#contact" class="btn btn-contact">Contact Me</a>
+    </div>  
+</section>
+
+<section id="project" class="sectionProject">
+    <h1>Projects</h1>
+    <div class="container">
+        <div class="project-card">
+            <img src="./assets/project1.png" alt="Project 1">
+            <div class="project-teks">
+                <h2>Project 1</h2>
+                <p>Projek UAS Tentang Website Donasi Yang dikerjakan oleh 2 orang</p>
+                <a href="https://github.com/komangyxy-commits/pweb-donasi" target="_blank" class="btn btn-project">Lihat Detail</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="./assets/project2.png" alt="Project 2">
+            <div class="project-teks">
+            <h2>Project 2</h2>
+            <p>Projek Rumah makan yang dikerjakan oleh 3 orang </p>
+            <a href="https://github.com/komangyxy-commits/pweb-booking-restaurant" target="_blank" class="btn btn-project">Lihat Detail</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="./assets/project3.png" alt="Project 3">
+            <div class="project-teks">
+            <h2>Project 3</h2>
+            <p>Projek UAS membuat sistem perpustakaan yang dikerjakan oleh 5 orang</p>
+            <a href="https://github.com/komangyxy-commits/pbo-uas" target="_blank" class="btn btn-project">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="sectionSkills">
+    <h1>Skills</h1>
+    <div class="container">
+        <div class="skill-card">
+            <img src="./assets/Logo-CSS.png" alt="CSS">
+            <p>CSS</p>
+        </div>
+        <div class="skill-card">
+            <img src="./assets/javascript.jpg" alt="JavaScript">
+            <p>JavaScript</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="sectionContact">
+    <div class="contact-info">
+    <h1>Contact Me</h1>
+        <p>Jika Anda tertarik untuk bekerja sama 
+            atau memiliki pertanyaan silakan hubungi 
+            saya melalui email atau media sosial
+        </p>
+        <p>ikomangriskytriyanaputra@gmail.com</p>
+        <a href="https://www.instagram.com/_komangrizky_/" target="_blank">
+            <i class="ph ph-instagram-logo"></i>
+        </a>
+        <a href="https://github.com/komangyxy-commits/" target="_blank">
+            <i class="ph ph-github-logo"></i>
+        </a>
+    </div> 
+    <form class="form-contact" id="form-contact">
+        <input id="name" name="name" type="text" 
+         placeholder="Your Name"><br>
+
+        <input id="email" name="email" type="email" 
+         placeholder="Your Email"><br>
+
+        <input id="phone" name="phone" type="tel" 
+         placeholder="Your Phone Number"><br>
+
+        <input id="subject" name="subject" type="text" 
+         placeholder="Subject"><br>
+
+        <textarea placeholder="Message" ></textarea>
+
+        <button type="submit" class="btn btn-form">Send Message</button>
+    </form>
+
+    <div id="myModal" class="modal">
+        <div class="showPopup">
+            <span class="close">&times;</span>
+            <p id="berhasil">successfully</p>
+            <p id="gagal">Please fill in all required fields</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2026 Rizky. All rights reserved.</p>
+    <div class="footer-gambar">
+        <a href="https://www.instagram.com/_komangrizky_/" target="_blank">
+            <i class="ph ph-instagram-logo"></i>
+        </a>
+        <a href="https://github.com/komangyxy-commits/" target="_blank">
+            <i class="ph ph-github-logo"></i>
+        </a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

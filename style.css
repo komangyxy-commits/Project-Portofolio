@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #16181b;
+}
+
+.navbar {   
+    background: linear-gradient(to right,
+        #212428,
+        #2d333a,
+        #212428
+    );
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 20px 50px;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li,
+.nav-links a {
+    margin-left: 20px;
+    color: #a0a6b5;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.nav-links a:hover {
+    border-bottom: #594ebc 2px solid;
+    color: #594ebc;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    font-size: 28px;
+    cursor: pointer;
+}
+.sectionHero{
+    display : flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.home-text {
+    text-align: justify;
+    padding: 40px;
+}
+
+.home-text h1 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.home-text p {
+    font-size: 18px;
+    color: #a0a6b5;
+    line-height: 1.6;
+    margin-bottom: 90px;
+}
+
+.home-text h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #594ebc;
+}
+
+.sectionHero img {
+    margin-top: 50px;
+    width: 550px;
+    height: auto;
+}
+
+.btn {
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn-project {
+    background: #594ebc;
+    color: white;
+    margin-right: 20px;
+}
+
+.btn-contact {
+    border: 2px solid #a0a6b5;
+    color: #ffffff;
+}
+
+.sectionProject{
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    padding-top: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.project-card {
+    background: #2d333a;
+    border-radius: 10px;
+    width: 700px;
+    height: 400px;
+    text-align: center;
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0px 18px rgba(82, 72, 174, 0.6);
+}
+.project-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-teks h2,
+.project-teks p {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.sectionSkills{
+    height: 400px;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.skill-card {
+    display: flex;
+    width:310px;
+    height: 150px;
+    border: 2px solid #a0a6b5;
+}
+
+.skill-card p {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    align-self: center;
+    margin-left: 5px;
+}
+
+.skill-card img {
+    margin: 20px;
+    border-radius: 10px;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.sectionContact{
+    text-align: center;
+    display: flex;
+}
+
+.contact-info {
+    color: white;
+    padding: 50px;
+    text-align: left;
+}
+
+.contact-info h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #a0a6b5;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-info i{
+    font-size: 50px;
+
+}
+.contact-info a {
+    font-size: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #594ebc;
+    text-decoration: none;
+}
+
+.form-contact{
+    align-items: center;
+    padding: 40px;
+    margin: 30px;
+    height: 410px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(181, 174, 174, 0.14);
+}
+
+.form-contact input, 
+.form-contact textarea {
+    background-color: #212428;
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+}
+
+.btn-form {
+    background: #594ebc;
+    color: white;
+    margin-right: 20px;
+    border-color: #594ebc;
+}
+
+.modal {
+  display: none;
+  padding-top: 300px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.showPopup {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.footer {
+    background:linear-gradient(to right,
+        #212428,
+        #2d333a,
+        #212428
+    );
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer i{
+    font-size: 30px;
+
+}
+.footer a {
+    font-size: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #594ebc;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(to right,
+        #212428,
+        #2d333a,
+        #212428
+    );
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .nav-links.hidden {
+        display: flex;
+    }
+
+    .menu-icon {    
+        display: flex;
+    }
+
+    .sectionHero {
+        flex-direction: column;
+    }
+
+    .sectionHero img {
+        width: 500px;
+        height: auto;
+    }
+    .home-text {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .sectionProject .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 400px;
+        height: 400px;
+        align-items: center;   
+    }
+    
+    .sectionSkills {
+        flex-direction: column;
+    }
+
+    .skill-card {
+    display: flex;
+    border: 2px solid #a0a6b5;
+    width:250px;
+    height: 100px;
+    
+    }
+    .skill-card img {
+    margin: 20px;
+    border-radius: 10px;
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    }
+
+    .sectionContact {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+
+    .form-contact {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .form-contact input, 
+    .form-contact textarea {
+        background-color: #212428;
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 2px solid #aaa;
+        border-radius: 4px;
+    }
+}
+
